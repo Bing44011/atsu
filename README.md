@@ -1,4 +1,4 @@
-# 源图智能 ATSU — 工业计算官网模板
+﻿# 源图智能 ATSU — 工业计算官网模板
 
 一套可直接改用的静态企业官网模板：信息架构参考 [上海炫移 hip-hytech.com](http://www.hip-hytech.com/) 的工业计算产品站，产品与品牌资料来自《源图智能 产品选型手册 2026》，视觉与交互按现代工业科技风重新设计。
 
@@ -113,7 +113,8 @@ const PRODUCTS = [
 | `com-podium.jpg` | COM 模块家族、解决方案配图 | 1200 × 1500 |
 | `case-network.jpg` | 案例：通信 / 网络测试 | 1400 × 730 |
 | `case-manufacturing.jpg` | 案例：智能制造 | 1200 × 1200 |
-| `case-lineup.jpg` | 案例：整机 / 零售 | 1800 × 660 |
+| `family-lineup.jpg` | 新闻头条：产品家族 | 1600 × 1000 |
+| `case-retail.jpg` | 案例：整机 / 零售 | 1000 × 1000 |
 | `case-board.jpg` | 案例：网安主板特写 | 900 × 1200 |
 | `product-*.webp` | 产品图 | 1000 × 750 |
 
