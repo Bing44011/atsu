@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    源图智能 ATSU — 站点交互
    ========================================================================== */
 (function () {
@@ -139,7 +139,7 @@
       "</ul></div>" +
       "</div>" +
       '<div class="footer-bottom"><div>© 2026 江苏源图智能科技有限公司 · 保留所有权利</div>' +
-      '<div class="links"><span>苏ICP12345678</span><a href="index.html">网站首页</a><a href="contact.html">联系我们</a></div></div>' +
+      '<div class="links"><span>ATSUSITE</span><a href="index.html">网站首页</a><a href="contact.html">联系我们</a></div></div>' +
       "</div></footer>" +
       '<div class="rail">' +
       '<a href="tel:' + HOME.phoneRaw + '" aria-label="电话咨询">' + icon("phone") + '<span class="tip">' + HOME.phone + "</span></a>" +
@@ -405,6 +405,12 @@
     const id = new URLSearchParams(location.search).get("id") || "s201";
     const p = productById(id) || PRODUCTS[0];
     document.title = p.name + " " + p.tagline + " — 源图智能 ATSU";
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://atsu.localhost.cc/product.html?id=" + p.id);
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", "https://atsu.localhost.cc/product.html?id=" + p.id);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", p.name + " " + p.tagline);
     const bcNow = document.getElementById("bcNow");
     if (bcNow) bcNow.textContent = p.name;
 

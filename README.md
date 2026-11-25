@@ -123,7 +123,15 @@ const PRODUCTS = [
 
 ### 7. 部署
 
-将整个 `yuantu-web/` 目录上传到任意静态托管（Nginx、OSS、GitHub Pages、Vercel 等），入口为 `index.html`。所有资源使用相对路径，可放在子目录。
+目标域名已按 `https://atsu.localhost.cc` 预制：`CNAME`、canonical、Open Graph、`sitemap.xml`、`robots.txt` 都已指向该域名。
+
+详细步骤见 **[DEPLOY.md](DEPLOY.md)**，包含三条路线：
+
+- GitHub Pages（免费，最快）
+- 腾讯云 COS 香港 + 自定义域名（企业静态站推荐）
+- 腾讯云轻量香港 + 宝塔（后续要接表单/后台）
+
+所有资源使用相对路径，也可直接放进主站的二级目录（如 `example.com/yuantu/`）。
 
 ## 已实现的功能清单
 
