@@ -115,7 +115,7 @@ const PRODUCTS = [
 | `case-manufacturing.jpg` | 案例：智能制造 | 1200 × 1200 |
 | `family-lineup.jpg` | 新闻头条：产品家族 | 1600 × 1000 |
 | `case-retail.jpg` | 案例：整机 / 零售 | 1000 × 1000 |
-| `case-board.jpg` | 案例：网安主板（B501） | 1200 × 780 |
+| `case-b501.jpg` | 案例：网安主板（B501） | 1200 × 780 |
 | `product-*.webp` | 产品图 | 1000 × 750 |
 
 ### 6. 表单
